@@ -24,10 +24,10 @@ int main(int argc, const char * argv[]) {
     clac_sig_dft((double*) &InputSignal_f32_1kHz_15kHz[0], (double*) &output_real[0], (double*) &output_imaginary[0], (int) SIGNAL_LENGTH);
     gft_mag((double*) output_mag);
     
-    fileIn = fopen("input_signal.dat", "w");
-    fileOutReal = fopen("output_real.dat", "w");
-    fileOutImag = fopen("output_imagninary.dat", "w");
-    fileOutMag = fopen("output_magnitude.dat", "w");
+    fileIn = fopen("input_signal.txt", "w");
+    fileOutReal = fopen("output_real.txt", "w");
+    fileOutImag = fopen("output_imagninary.txt", "w");
+    fileOutMag = fopen("output_magnitude.txt", "w");
     
     for (int i = 0; i < SIGNAL_LENGTH; i++) {
         

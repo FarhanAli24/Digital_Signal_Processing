@@ -30,11 +30,11 @@ int main(int argc, const char * argv[]) {
     
     get_mag((double*) output_mag);
     
-    fileIn = fopen("input_signal.dat", "w");
-    fileOutReal = fopen("output_real.dat", "w");
-    fileOutImag = fopen("output_imaginary.dat", "w");
-    fileOutMag = fopen("output_magnitude.dat", "w");
-    fileOutIDFT = fopen("output_IDFT.dat", "w");
+    fileIn = fopen("input_signal.txt", "w");
+    fileOutReal = fopen("output_real.txt", "w");
+    fileOutImag = fopen("output_imaginary.txt", "w");
+    fileOutMag = fopen("output_magnitude.txt", "w");
+    fileOutIDFT = fopen("output_IDFT.txt", "w");
     
     for (int i = 0; i < SIGNAL_LENGTH; i++) {
         
